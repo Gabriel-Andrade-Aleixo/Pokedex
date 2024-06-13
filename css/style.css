@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    transition: 0.5s;
+}
+html{
+    height: 500vw;
+}
+.divLogo {
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    width: 100vw;
+    background-color: red;
+    padding: 2%;
+    max-height: 180px;
+    position: fixed;
+    height: 180px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header img {
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+header img:hover {
+    width: 55px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul div {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul div li a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+header ul div li a:hover {
+    color: rgb(0, 20, 37);
+    text-decoration: none;
+    transition: .5s;
+    font-size: 1.6rem;
+}
+
+header div nav ul div {
+    width: 20px;
+    text-align: center;
+}
+
+header div nav ul div li,
+header div a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header div a{
+    transform: translate(-50%, -50%);
+    margin-top: 50%;
+    margin-left: 50%;
+}
