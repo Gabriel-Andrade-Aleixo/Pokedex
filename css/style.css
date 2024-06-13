@@ -7,36 +7,14 @@
     font-family: 'Oxanium', cursive;
     transition: 0.5s;
 }
-html{
+
+html {
     height: 500vw;
 }
+
 .divLogo {
     width: 70px;
     height: 70px;
-}
-
-header {
-    width: 100vw;
-    background-color: red;
-    padding: 2%;
-    max-height: 180px;
-    position: fixed;
-    height: 180px;
-    top: 0;
-    left: 0;
-    transition: .5s;
-}
-
-header img {
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-header img:hover {
-    width: 55px;
 }
 
 .flex {
@@ -55,13 +33,39 @@ header img:hover {
     margin: auto;
 }
 
+header {
+    width: 100vw;
+    background-color: red;
+    padding: 2%;
+    max-height: 180px;
+    position: fixed;
+    height: 180px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 05px 15px 05px rgb(0, 0, 0);
+}
+
+header img {
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+header img:hover {
+    width: 55px;
+}
+
 header ul {
     list-style-type: none;
 }
 
 header ul div {
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 30px;
 }
 
 header ul div li a {
@@ -79,18 +83,63 @@ header ul div li a:hover {
 }
 
 header div nav ul div {
-    width: 20px;
+    width: auto;
     text-align: center;
 }
 
 header div nav ul div li,
-header div a{
+header div a li {
     align-items: center;
     justify-content: center;
     display: flex;
 }
-header div a{
+
+header div img {
     transform: translate(-50%, -50%);
     margin-top: 50%;
     margin-left: 50%;
+}
+
+header.scrollh {
+    padding: 1% 2%;
+    z-index: 99999999;
+    height: 140px;
+}
+
+.banner {
+    max-width: 100%;
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: rgb(0, 0, 0);
+    animation: growShrink 2s linear infinite;
+    text-shadow:
+        /* -1px -1px 0 rgb(245, 94, 94), */
+        /* 1px -1px 0 rgb(245, 94, 94), */
+        /* -1px 1px 0 rgb(245, 94, 94), */
+        1px 1px 0 rgb(245, 94, 94);
+}
+
+@keyframes growShrink {
+    0% {
+        transform: scale(2.25);
+        /* Tamanho original */
+    }
+
+    50% {
+        transform: scale(2.5);
+        /* Aumenta o tamanho em 50% */
+    }
+
+    100% {
+        transform: scale(2.25);
+        /* Volta ao tamanho original */
+    }
 }
