@@ -9,7 +9,8 @@
 }
 
 html {
-    height: 500vw;
+    /* height: 500vw; */
+    scroll-behavior: smooth;
 }
 
 .divLogo {
@@ -35,14 +36,14 @@ html {
 
 header {
     width: 100vw;
-    background-color: red;
+    background-color: rgb(91, 0, 0);
     padding: 2%;
     max-height: 180px;
     position: fixed;
-    height: 180px;
+    height:12vw;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: .7s;
     border-bottom: 1px solid black;
     box-shadow: 0px 05px 15px 05px rgb(0, 0, 0);
 }
@@ -103,7 +104,7 @@ header div img {
 header.scrollh {
     padding: 1% 2%;
     z-index: 99999999;
-    height: 140px;
+    height: 9vw;
 }
 
 .banner {
@@ -124,8 +125,10 @@ header.scrollh {
         /* -1px -1px 0 rgb(245, 94, 94), */
         /* 1px -1px 0 rgb(245, 94, 94), */
         /* -1px 1px 0 rgb(245, 94, 94), */
-        1px 1px 0 rgb(245, 94, 94);
+        1px 1px 0 rgb(189, 127, 127);
 }
+
+
 
 @keyframes growShrink {
     0% {
@@ -142,4 +145,75 @@ header.scrollh {
         transform: scale(2.25);
         /* Volta ao tamanho original */
     }
+}
+
+footer{
+    width: 100%;
+    /* height: 500px; */
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+    box-shadow: 15px 5px 15px 15px rgb(0, 0, 0);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+footer img {
+    transform: translateX(-50%);
+    margin: 100px;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 650px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgb(91, 0, 0);
+        width: 10%;
+        min-width: 100px;
+        max-width: 200px;
+        text-align: center;
+        box-shadow: 0px 12px 20px rgb(0, 0, 0);
+    }
+
+    nav.active ul {
+        flex-direction: column;
+    }
+
+    nav.active ul div {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav.active ul div li a {
+        font-size: 1.2rem;
+    }
+
+    footer img{
+        display: none;}
 }
