@@ -289,6 +289,13 @@ footer p {
     height: 300px;
 }
 
+.pokemon__image2,
+.pokemon__image3,
+.pokemon__image4,
+.pokemon__image5{
+    width: 100px;
+}
+
 .pokemon__data {
     font-weight: 600;
     color: #aaa;
