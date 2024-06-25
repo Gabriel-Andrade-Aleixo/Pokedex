@@ -297,10 +297,13 @@ footer p {
     font-size: clamp(8px, 5vw, 25px);
 }
 
-.pokemon__name {
+.pokemon__name,
+.pokemon__typeName {
     color: #3a444d;
     text-transform: capitalize;
 }
+
+
 
 /* .form {
     width: 65%;
