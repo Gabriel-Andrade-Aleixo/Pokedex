@@ -4,7 +4,7 @@ Projeto de aprendizado... <br>
 Aqui esta o link para o site: <a target="_blank">https://667a1848b919396a60d864e1--joyful-zuccutto-2e6cad.netlify.app/pokedex</a> <br>
 
 ## Imagem Demonstrativa.
-![image](https://github.com/Gabriel-Andrade-Aleixo/Pokedex/ImagemLegal.jpeg)
+![image](https://github.com/Gabriel-Andrade-Aleixo/Pokedex/blob/main/img/imagemLegal.jpeg)
 
 
 
